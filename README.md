@@ -1,3 +1,9 @@
+# NOTE!
+
+This project is based on open source projects. It's a quick n' dirty personal project that will improve over time.
+
+----------------------------------------------------
+
 # Socket.IO / Objective C Library (ARC version)
 
   Interface to communicate between Objective C and [Socket.IO](http://socket.io/)
