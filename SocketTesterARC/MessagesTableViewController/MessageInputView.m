@@ -64,8 +64,18 @@
     self.opaque = YES;
     self.userInteractionEnabled = YES;
     
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] init];
+    [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
+    [swipe addTarget:self action:@selector(swipe)];
+    [self addGestureRecognizer:swipe];
+    
     [self setupTextView];
     [self setupSendButton];
+}
+
+- (void)swipe
+{
+    [self.textView becomeFirstResponder];
 }
 
 - (void)setupTextView

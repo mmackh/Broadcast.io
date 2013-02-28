@@ -34,10 +34,13 @@
 #import <UIKit/UIKit.h>
 #import "BubbleMessageCell.h"
 #import "MessageSoundEffect.h"
+#import "DAKeyboardControl.h"
 
 @class MessageInputView;
 
 @interface MessagesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextViewDelegate>
+{
+}
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) MessageInputView *inputView;

@@ -11,9 +11,10 @@
 #import "SocketIOPacket.h"
 #import "MessagesViewController.h"
 
-@interface ViewController : MessagesViewController <SocketIODelegate>
+@interface ViewController : MessagesViewController <SocketIODelegate, UIActionSheetDelegate>
 {
     SocketIO *socketIO;
+    NSString *username;
 }
 
 @property (strong, nonatomic) NSMutableArray *messages;

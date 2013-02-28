@@ -74,6 +74,15 @@
     //swipe.direction = UISwipeGestureRecognizerDirectionDown;
     //swipe.numberOfTouchesRequired = 1;
     //[self.inputView addGestureRecognizer:swipe];
+    
+    
+    __unsafe_unretained typeof(self) weakSelf = self;
+    
+    self.view.keyboardTriggerOffset = self.inputView.frame.size.height;
+    [self.view addKeyboardPanningWithActionHandler:^(CGRect keyboardFrameInView)
+     {
+         weakSelf.inputView.frame = CGRectMake(0, keyboardFrameInView.origin.y - weakSelf.inputView.frame.size.height, weakSelf.inputView.frame.size.width, weakSelf.inputView.frame.size.height);
+     }];
 }
 
 #pragma mark - View lifecycle
@@ -274,6 +283,7 @@
 - (void)handleWillHideKeyboard:(NSNotification *)notification
 {
     [self keyboardWillShowHide:notification];
+    [self scrollToBottomAnimated:YES];
 }
 
 - (void)keyboardWillShowHide:(NSNotification *)notification
