@@ -21,7 +21,10 @@
     
     socketIO = [[SocketIO alloc] initWithDelegate:self];
     //socketIO.useSecure = YES;
-    [socketIO connectToHost:@"localhost" onPort:3000];
+    [socketIO connectToHost:@"192.168.100.178" onPort:8080];
+    
+    self.title = @"Messages";
+    self.messages = [[NSMutableArray alloc] init];
 }
 
 - (void) viewDidUnload
@@ -35,19 +38,16 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-
-
-
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
-    NSLog(@"didReceiveEvent()");
+    [MessageSoundEffect playMessageReceivedSound];
     
-    SocketIOCallback cb = ^(id argsData) {
-        NSDictionary *response = argsData;
-        // do something with response
-        NSLog(@"ack arrived: %@", response);
-    };
-    [socketIO sendMessage:@"hello back!" withAcknowledge:cb];
+    NSMutableDictionary *msg = [NSMutableDictionary dictionary];
+    [msg setObject:[[[packet.dataAsJSON objectForKey:@"args"] objectAtIndex:0] objectForKey:@"data"] forKey:@"text"];
+    [msg setObject:@"false" forKey:@"me"];
+    [self.messages addObject:msg];
+    
+    [self finishGet];
 }
 
 - (void) socketIO:(SocketIO *)socket failedToConnectWithError:(NSError *)error
@@ -55,5 +55,43 @@
     NSLog(@"failedToConnectWithError() %@", error);
 }
 
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.messages.count;
+}
+
+#pragma mark - Messages view controller
+- (BubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *msg = [self.messages objectAtIndex:indexPath.row];
+    return ([[msg objectForKey:@"me"] isEqualToString:@"true"]) ? BubbleMessageStyleOutgoing : BubbleMessageStyleIncoming;
+}
+
+- (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *msg = [self.messages objectAtIndex:indexPath.row];
+    return [msg objectForKey:@"text"];
+
+}
+
+- (void)sendPressed:(UIButton *)sender withText:(NSString *)text
+{
+    
+    NSMutableDictionary *msg = [NSMutableDictionary dictionary];
+    [msg setObject:text forKey:@"text"];
+    [msg setObject:@"true" forKey:@"me"];
+    [self.messages addObject:msg];
+    
+    [MessageSoundEffect playMessageSentSound];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:text forKey:@"payload"];
+    
+    [socketIO sendEvent:@"refresh" withData:dict];
+    
+    [self finishSend];
+}
 
 @end

@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22FDD6FA16DEB2F800931313 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD6F916DEB2F800931313 /* Default-568h@2x.png */; };
+		22FDD71D16DEB3E600931313 /* BubbleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD6FD16DEB3E600931313 /* BubbleMessageCell.m */; };
+		22FDD71E16DEB3E600931313 /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD6FF16DEB3E600931313 /* BubbleView.m */; };
+		22FDD71F16DEB3E600931313 /* MessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD70116DEB3E600931313 /* MessageInputView.m */; };
+		22FDD72016DEB3E600931313 /* MessageSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD70316DEB3E600931313 /* MessageSoundEffect.m */; };
+		22FDD72116DEB3E600931313 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD70516DEB3E600931313 /* MessagesViewController.m */; };
+		22FDD72216DEB3E600931313 /* NSString+MessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD70716DEB3E600931313 /* NSString+MessagesView.m */; };
+		22FDD72316DEB3E600931313 /* input-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70A16DEB3E600931313 /* input-bar.png */; };
+		22FDD72416DEB3E600931313 /* input-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70B16DEB3E600931313 /* input-bar@2x.png */; };
+		22FDD72516DEB3E600931313 /* input-field.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70C16DEB3E600931313 /* input-field.png */; };
+		22FDD72616DEB3E600931313 /* input-field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70D16DEB3E600931313 /* input-field@2x.png */; };
+		22FDD72716DEB3E600931313 /* messageBubbleBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70E16DEB3E600931313 /* messageBubbleBlue.png */; };
+		22FDD72816DEB3E600931313 /* messageBubbleBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD70F16DEB3E600931313 /* messageBubbleBlue@2x.png */; };
+		22FDD72916DEB3E600931313 /* messageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71016DEB3E600931313 /* messageBubbleGray.png */; };
+		22FDD72A16DEB3E600931313 /* messageBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71116DEB3E600931313 /* messageBubbleGray@2x.png */; };
+		22FDD72B16DEB3E600931313 /* messageBubbleHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71216DEB3E600931313 /* messageBubbleHighlighted.png */; };
+		22FDD72C16DEB3E600931313 /* messageBubbleHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71316DEB3E600931313 /* messageBubbleHighlighted@2x.png */; };
+		22FDD72D16DEB3E600931313 /* messageBubbleTyping.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71416DEB3E600931313 /* messageBubbleTyping.png */; };
+		22FDD72E16DEB3E600931313 /* messageBubbleTyping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71516DEB3E600931313 /* messageBubbleTyping@2x.png */; };
+		22FDD72F16DEB3E600931313 /* send-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71616DEB3E600931313 /* send-highlighted.png */; };
+		22FDD73016DEB3E600931313 /* send-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71716DEB3E600931313 /* send-highlighted@2x.png */; };
+		22FDD73116DEB3E600931313 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71816DEB3E600931313 /* send.png */; };
+		22FDD73216DEB3E600931313 /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71916DEB3E600931313 /* send@2x.png */; };
+		22FDD73316DEB3E600931313 /* messageReceived.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71B16DEB3E600931313 /* messageReceived.aiff */; };
+		22FDD73416DEB3E600931313 /* messageSent.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD71C16DEB3E600931313 /* messageSent.aiff */; };
+		22FDD73616DEB4B900931313 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FDD73516DEB4B900931313 /* AudioToolbox.framework */; };
 		4A444FA11589E28800B44ABB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A444FA01589E28800B44ABB /* libicucore.dylib */; };
 		4A444FA31589E29500B44ABB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A444FA21589E29500B44ABB /* Security.framework */; };
 		4A44536C1589EE5900B44ABB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4453541589EE5900B44ABB /* NSObject+SBJson.m */; };
@@ -43,6 +69,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22FDD6F916DEB2F800931313 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		22FDD6FC16DEB3E600931313 /* BubbleMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleMessageCell.h; sourceTree = "<group>"; };
+		22FDD6FD16DEB3E600931313 /* BubbleMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleMessageCell.m; sourceTree = "<group>"; };
+		22FDD6FE16DEB3E600931313 /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		22FDD6FF16DEB3E600931313 /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
+		22FDD70016DEB3E600931313 /* MessageInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInputView.h; sourceTree = "<group>"; };
+		22FDD70116DEB3E600931313 /* MessageInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInputView.m; sourceTree = "<group>"; };
+		22FDD70216DEB3E600931313 /* MessageSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSoundEffect.h; sourceTree = "<group>"; };
+		22FDD70316DEB3E600931313 /* MessageSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageSoundEffect.m; sourceTree = "<group>"; };
+		22FDD70416DEB3E600931313 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		22FDD70516DEB3E600931313 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		22FDD70616DEB3E600931313 /* NSString+MessagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MessagesView.h"; sourceTree = "<group>"; };
+		22FDD70716DEB3E600931313 /* NSString+MessagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MessagesView.m"; sourceTree = "<group>"; };
+		22FDD70A16DEB3E600931313 /* input-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-bar.png"; sourceTree = "<group>"; };
+		22FDD70B16DEB3E600931313 /* input-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-bar@2x.png"; sourceTree = "<group>"; };
+		22FDD70C16DEB3E600931313 /* input-field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-field.png"; sourceTree = "<group>"; };
+		22FDD70D16DEB3E600931313 /* input-field@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-field@2x.png"; sourceTree = "<group>"; };
+		22FDD70E16DEB3E600931313 /* messageBubbleBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageBubbleBlue.png; sourceTree = "<group>"; };
+		22FDD70F16DEB3E600931313 /* messageBubbleBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageBubbleBlue@2x.png"; sourceTree = "<group>"; };
+		22FDD71016DEB3E600931313 /* messageBubbleGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageBubbleGray.png; sourceTree = "<group>"; };
+		22FDD71116DEB3E600931313 /* messageBubbleGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageBubbleGray@2x.png"; sourceTree = "<group>"; };
+		22FDD71216DEB3E600931313 /* messageBubbleHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageBubbleHighlighted.png; sourceTree = "<group>"; };
+		22FDD71316DEB3E600931313 /* messageBubbleHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageBubbleHighlighted@2x.png"; sourceTree = "<group>"; };
+		22FDD71416DEB3E600931313 /* messageBubbleTyping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageBubbleTyping.png; sourceTree = "<group>"; };
+		22FDD71516DEB3E600931313 /* messageBubbleTyping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageBubbleTyping@2x.png"; sourceTree = "<group>"; };
+		22FDD71616DEB3E600931313 /* send-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-highlighted.png"; sourceTree = "<group>"; };
+		22FDD71716DEB3E600931313 /* send-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-highlighted@2x.png"; sourceTree = "<group>"; };
+		22FDD71816DEB3E600931313 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		22FDD71916DEB3E600931313 /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send@2x.png"; sourceTree = "<group>"; };
+		22FDD71B16DEB3E600931313 /* messageReceived.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = messageReceived.aiff; sourceTree = "<group>"; };
+		22FDD71C16DEB3E600931313 /* messageSent.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = messageSent.aiff; sourceTree = "<group>"; };
+		22FDD73516DEB4B900931313 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4A444FA01589E28800B44ABB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		4A444FA21589E29500B44ABB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4A4453531589EE5900B44ABB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "submodules/json-framework/Classes/NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -111,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FDD73616DEB4B900931313 /* AudioToolbox.framework in Frameworks */,
 				4A444FA31589E29500B44ABB /* Security.framework in Frameworks */,
 				4A444FA11589E28800B44ABB /* libicucore.dylib in Frameworks */,
 				4ADCCBEF15790FC70022990C /* CFNetwork.framework in Frameworks */,
@@ -125,6 +184,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22FDD6FB16DEB3E600931313 /* MessagesTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD6FC16DEB3E600931313 /* BubbleMessageCell.h */,
+				22FDD6FD16DEB3E600931313 /* BubbleMessageCell.m */,
+				22FDD6FE16DEB3E600931313 /* BubbleView.h */,
+				22FDD6FF16DEB3E600931313 /* BubbleView.m */,
+				22FDD70016DEB3E600931313 /* MessageInputView.h */,
+				22FDD70116DEB3E600931313 /* MessageInputView.m */,
+				22FDD70216DEB3E600931313 /* MessageSoundEffect.h */,
+				22FDD70316DEB3E600931313 /* MessageSoundEffect.m */,
+				22FDD70416DEB3E600931313 /* MessagesViewController.h */,
+				22FDD70516DEB3E600931313 /* MessagesViewController.m */,
+				22FDD70616DEB3E600931313 /* NSString+MessagesView.h */,
+				22FDD70716DEB3E600931313 /* NSString+MessagesView.m */,
+				22FDD70816DEB3E600931313 /* Resources */,
+			);
+			path = MessagesTableViewController;
+			sourceTree = "<group>";
+		};
+		22FDD70816DEB3E600931313 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD70916DEB3E600931313 /* Images */,
+				22FDD71A16DEB3E600931313 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22FDD70916DEB3E600931313 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD70A16DEB3E600931313 /* input-bar.png */,
+				22FDD70B16DEB3E600931313 /* input-bar@2x.png */,
+				22FDD70C16DEB3E600931313 /* input-field.png */,
+				22FDD70D16DEB3E600931313 /* input-field@2x.png */,
+				22FDD70E16DEB3E600931313 /* messageBubbleBlue.png */,
+				22FDD70F16DEB3E600931313 /* messageBubbleBlue@2x.png */,
+				22FDD71016DEB3E600931313 /* messageBubbleGray.png */,
+				22FDD71116DEB3E600931313 /* messageBubbleGray@2x.png */,
+				22FDD71216DEB3E600931313 /* messageBubbleHighlighted.png */,
+				22FDD71316DEB3E600931313 /* messageBubbleHighlighted@2x.png */,
+				22FDD71416DEB3E600931313 /* messageBubbleTyping.png */,
+				22FDD71516DEB3E600931313 /* messageBubbleTyping@2x.png */,
+				22FDD71616DEB3E600931313 /* send-highlighted.png */,
+				22FDD71716DEB3E600931313 /* send-highlighted@2x.png */,
+				22FDD71816DEB3E600931313 /* send.png */,
+				22FDD71916DEB3E600931313 /* send@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		22FDD71A16DEB3E600931313 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD71B16DEB3E600931313 /* messageReceived.aiff */,
+				22FDD71C16DEB3E600931313 /* messageSent.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		4A4453781589EE6300B44ABB /* SBJson */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +312,7 @@
 		4ADCCBA015790D760022990C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22FDD73516DEB4B900931313 /* AudioToolbox.framework */,
 				4A444FA21589E29500B44ABB /* Security.framework */,
 				4A444FA01589E28800B44ABB /* libicucore.dylib */,
 				4ADCCBF215790FDF0022990C /* SystemConfiguration.framework */,
@@ -225,6 +346,7 @@
 				4AD96DF716808B7900D9E42D /* SocketIOTransportWebsocket.m */,
 				4AD96DFA16822DE300D9E42D /* SocketIOTransportXHR.h */,
 				4AD96DFB16822DE300D9E42D /* SocketIOTransportXHR.m */,
+				22FDD6FB16DEB3E600931313 /* MessagesTableViewController */,
 				4ADCCBA815790D760022990C /* Supporting Files */,
 			);
 			path = SocketTesterARC;
@@ -233,6 +355,7 @@
 		4ADCCBA815790D760022990C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22FDD6F916DEB2F800931313 /* Default-568h@2x.png */,
 				4ADCCBA915790D760022990C /* SocketTesterARC-Info.plist */,
 				4ADCCBAA15790D760022990C /* InfoPlist.strings */,
 				4ADCCBAD15790D760022990C /* main.m */,
@@ -294,6 +417,25 @@
 			files = (
 				4ADCCBAC15790D760022990C /* InfoPlist.strings in Resources */,
 				4ADCCBB815790D760022990C /* ViewController.xib in Resources */,
+				22FDD6FA16DEB2F800931313 /* Default-568h@2x.png in Resources */,
+				22FDD72316DEB3E600931313 /* input-bar.png in Resources */,
+				22FDD72416DEB3E600931313 /* input-bar@2x.png in Resources */,
+				22FDD72516DEB3E600931313 /* input-field.png in Resources */,
+				22FDD72616DEB3E600931313 /* input-field@2x.png in Resources */,
+				22FDD72716DEB3E600931313 /* messageBubbleBlue.png in Resources */,
+				22FDD72816DEB3E600931313 /* messageBubbleBlue@2x.png in Resources */,
+				22FDD72916DEB3E600931313 /* messageBubbleGray.png in Resources */,
+				22FDD72A16DEB3E600931313 /* messageBubbleGray@2x.png in Resources */,
+				22FDD72B16DEB3E600931313 /* messageBubbleHighlighted.png in Resources */,
+				22FDD72C16DEB3E600931313 /* messageBubbleHighlighted@2x.png in Resources */,
+				22FDD72D16DEB3E600931313 /* messageBubbleTyping.png in Resources */,
+				22FDD72E16DEB3E600931313 /* messageBubbleTyping@2x.png in Resources */,
+				22FDD72F16DEB3E600931313 /* send-highlighted.png in Resources */,
+				22FDD73016DEB3E600931313 /* send-highlighted@2x.png in Resources */,
+				22FDD73116DEB3E600931313 /* send.png in Resources */,
+				22FDD73216DEB3E600931313 /* send@2x.png in Resources */,
+				22FDD73316DEB3E600931313 /* messageReceived.aiff in Resources */,
+				22FDD73416DEB3E600931313 /* messageSent.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +469,12 @@
 				4AD96DF41680853E00D9E42D /* SocketIOPacket.m in Sources */,
 				4AD96DF816808B7900D9E42D /* SocketIOTransportWebsocket.m in Sources */,
 				4AD96DFC16822DE300D9E42D /* SocketIOTransportXHR.m in Sources */,
+				22FDD71D16DEB3E600931313 /* BubbleMessageCell.m in Sources */,
+				22FDD71E16DEB3E600931313 /* BubbleView.m in Sources */,
+				22FDD71F16DEB3E600931313 /* MessageInputView.m in Sources */,
+				22FDD72016DEB3E600931313 /* MessageSoundEffect.m in Sources */,
+				22FDD72116DEB3E600931313 /* MessagesViewController.m in Sources */,
+				22FDD72216DEB3E600931313 /* NSString+MessagesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
